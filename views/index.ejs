@@ -1,32 +1,45 @@
 <% include ./partials/header %>
 
 
-  <header class="headline">
-    <h1>Christopher K. <br> Knickerbocker</h1>
+  <div class="container">
+    <div class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="a"></a>About</li>
+          <li><a href="a"></a>Portfolio</li>
+          <li><a href="a"></a>Blog</li>
+          <li><a href="a"></a>Contact</li>
+        </ul>
+      </nav>
+    </div>
+  <div class="content">
+    <section class="hero">
+      <img src="images/kyle-profile-bw.jpg">
+      <div class="hero-content">
+        <h1>Christopher K. <br> Knickerbocker</h1>
+        <h3>Austin-based Software Developer</h3>
+        <a class="action-btn" href="#">Contact Me</a>
+      </div>
+    </section>
+  </div>
+
+<% include ./partials/footer %>
+
+  <!-- <header class="headline">
+    
   </header>
 
   <figure class = "photo">
     <div class ="photo-object">
-      <img src="images/kyle-landscape-bw.jpg">
+      
     </div>
   </figure>
-  <section class = "bio-header">
-      <h2>Software developer and designer living in Austin, Texas.</h2>
-  </section>
-
     <section class="bio-content">
-      <p>Hello, my name is Kyle Knickerbocker. I'm a software developer who mainly focuses on full-stack
-        web development.  Previously, I worked as an Environmental Scientist where I started programming
-        by writing macros in Visual Basic, implementing Matlab algorithms, and automating GIS tasks with Python.
-      </p>
-      <p>
-        Over the past several years, I've commited myself to pursue coding full-time and have expanded my
-        capabilities to Javascript, HTML,  and CSS.
-      </p>
+      <p>Hello, my name is Kyle Knickerbocker. My area of work includes full-stack web development and GIS applications</p>
   </section>
 
   <section class = "external-menu">
-    <!-- <h4>Other web profiles:</h4> -->
+    <h4>Other web profiles:</h4>
     <div class = 'external-links'>
       <li>
         <a href="https://github.com/ckylek">
@@ -50,6 +63,46 @@
       </li>
     </div>
   </section>
+<div class = "projects-section">
+  <p>Recent Projects</p>
+  <div class = "projects-container">
+    <div class="front-project javascript web-application web-game website">
+      <img src = "/images/colortrainer.png">
+      <div class="item__overlay">
+          <div class = "project-summary">
+              Web Application Game. Try to guess the correct color! This app
+              is built primarily using javascript <b>DOM manipulation</b> and <b>event handling.</b>
+          </div>
+          <a href="https://ckylek.github.io/color-game">View Website →</a>
+          <a href="https://github.com/ckylek/color-game">View on Github→</a>
+      </div>
+    </div>
+    <div class="front-project">
+        <img src="/images/colortrainer.png">
+        <div class="item__overlay">
+            <button>View →</button>
+            Web application game where the user attempts to guess the correct color. The app
+            is built primarily using javascript DOM manipulation and event handling.
+        </div>
+    </div>
+    <div class="front-project">
+      <img src="/images/colortrainer.png">
+      <div class="item__overlay">
+          <button>View →</button>
+          Web application game where the user attempts to guess the correct color. The app
+          is built primarily using javascript DOM manipulation and event handling.
+      </div>
+    </div>
+    <div class="front-project">
+      <img src="/images/colortrainer.png">
+      <div class="item__overlay">
+            <button>View →</button>
+            Web application game where the user attempts to guess the correct color. The app
+            is built primarily using javascript DOM manipulation and event handling.
+      </div>
+    </div>
+</div>
+</div>
 
   </div>
-</body>
+</body> -->
