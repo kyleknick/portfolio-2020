@@ -152,10 +152,10 @@ nav li a:hover {
   box-shadow: 0 18px 50px rgba(188,197,216,1);
 }
 
-.projects {
-  grid-area: projects / projects;
+.summary-info {
+  grid-area: summary-info;
   padding: 0px;
-  margin: 1rem;
+  margin: 0;
 }
 .heading {
   font-weight: 500;
@@ -227,7 +227,7 @@ p {
   grid-gap: 20px;
   padding: 30px 0px;
   justify-self: center;
-  max-width: 960px;;
+  max-width: 960px;
 }
 
 .project {
@@ -292,9 +292,10 @@ p {
     text-align: left;
     margin: 2em auto;
     display: grid;
+    grid-gap: 2em;
     grid-template-areas: 
-    "hero-img projects"
-    "hero-content projects"
+    "hero-img summary-info"
+    "hero-content summary-info"
     ;
     grid-template-columns: 
     1fr 3fr;
