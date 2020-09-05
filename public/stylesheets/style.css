@@ -28,8 +28,8 @@ body {
   justify-content: center;
 }
 .footer {
-  grid-area: footer;
-  background: var(--secondary);
+  grid-area: summary-info;
+  /* background: var(--secondary); */
 }
 .title {
   display: block;
@@ -96,7 +96,7 @@ nav li {
 }
 a {
   color: var(--primary);
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -105,6 +105,7 @@ nav li a:hover {
 }
 .hero {
   display: grid;
+  color: var(--primary);
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
@@ -123,19 +124,10 @@ nav li a:hover {
 .hero-content {
   grid-area: hero-content;
 }
-.hero-content {
+.hero-content p {
+  margin: 0;
+}
 
-}
-.hero h3 {
-  font-size: 1.25em;
-  font-weight: 500;
-  color: var(--primary);
-}
-/* .hero p {
-  font-weight: 400;
-  line-height: 1.8em;
-  color: var(--primary);
-} */
 .action-btn {
   display: inline-block;
   text-decoration: none;
@@ -292,7 +284,7 @@ p {
     text-align: left;
     margin: 2em auto;
     display: grid;
-    grid-gap: 2em;
+    column-gap: 2em;
     grid-template-areas: 
     "hero-img summary-info"
     "hero-content summary-info"
